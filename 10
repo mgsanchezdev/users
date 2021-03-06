@@ -1,0 +1,27 @@
+
+> husky@5.1.3 preuninstall C:\Users\Marito\Documents\01-Desarrollo-Web\01-prueba-tecnica-entrevista\01- Wispro\users\node_modules\husky
+> node lib/bin uninstall
+
+
+> husky@4.3.8 install C:\Users\Marito\Documents\01-Desarrollo-Web\01-prueba-tecnica-entrevista\01- Wispro\users\node_modules\husky
+> node husky install
+
+husky > Setting up git hooks
+husky > Done
+
+> husky@4.3.8 postinstall C:\Users\Marito\Documents\01-Desarrollo-Web\01-prueba-tecnica-entrevista\01- Wispro\users\node_modules\husky
+> opencollective-postinstall || exit 0
+
+[96m[1mThank you for using husky![96m[1m
+[0m[96mIf you rely on this package, please consider supporting our open collective:[22m[39m
+> [94mhttps://opencollective.com/husky/donate[0m
+
++ husky@4.3.8
++ lint-staged@10.5.4
+added 62 packages from 23 contributors, updated 1 package and audited 2018 packages in 65.067s
+
+142 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
