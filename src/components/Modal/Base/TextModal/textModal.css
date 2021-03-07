@@ -1,0 +1,30 @@
+.text-modal {
+  background: white;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.text-modal-dialog {
+  background: white;
+  padding: 5rem;
+  white-space: pre-wrap;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.text-modal-open {
+  display: grid;
+}
+
+.text-modal-dialog-btn {
+  margin-top: 4rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}

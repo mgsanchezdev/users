@@ -1,0 +1,86 @@
+.auth {
+  display: flex;
+  min-height: 92vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+}
+.auth-container {
+  width: 85%;
+  max-width: 45rem;
+  position: relative;
+}
+.auth-forms {
+  position: relative;
+  min-height: 30rem;
+  width: 100%;
+  background: var(--color-white);
+  box-shadow: 0 0 1rem 0 var(--color-grey);
+  border-radius: 0.8rem;
+  z-index: 20;
+  padding: 3rem 2rem;
+}
+.auth-button {
+  cursor: pointer;
+  position: absolute;
+  width: 80%;
+  height: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% - 2rem);
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--color-violet);
+  color: var(--color-white);
+  z-index: 10;
+  transition: 0.3s linear;
+  outline: none;
+  font-weight: var(--font-medium);
+  font-family: var(--font-family);
+  box-shadow: 0 0 1rem 0 var(--color-yelloy);
+}
+.auth-button:hover {
+  top: calc(100% - 1rem);
+}
+.auth-button.login-button {
+  transition: 0.3s linear;
+  top: -5rem;
+  background: var(--color-purple);
+}
+.auth-button.login-button:hover {
+  top: -6rem;
+}
+.auth-forms figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  margin-bottom: 2rem;
+}
+.auth-forms figure img {
+  height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .auth-button {
+    width: 15rem;
+    height: 80%;
+    left: calc(100% - 2rem);
+    transform: initial;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  .auth-button:hover {
+    top: 50%;
+    left: calc(100% - 1rem);
+  }
+  .auth-button.login-button {
+    left: -13rem;
+    top: 50%;
+  }
+  .auth-button.login-button:hover {
+    top: 50%;
+    left: -14rem;
+  }
+}
