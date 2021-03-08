@@ -28,11 +28,12 @@ export const Register = ({ openModal = (f) => f }) => {
       }
     } else {
       reset();
-      messageAlert('success', 'Acabas de unirte a nuestra comunidad').then(
-        () => {
-          history.push('/home');
-        }
-      );
+      messageAlert(
+        'success',
+        'Recibirás en tu correo un mensaje para confirmar tu cuenta'
+      ).then(() => {
+        history.push('/home');
+      });
     }
   };
 

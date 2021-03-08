@@ -1,0 +1,11 @@
+.backgroungContainer {
+  background: rgb(94, 78, 173);
+  height: 100vh;
+}
+
+.title {
+  margin-top: 350px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}

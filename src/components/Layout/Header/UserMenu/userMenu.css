@@ -1,0 +1,16 @@
+.menu_login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title-user,
+.btn-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.btn-btn {
+  font-size: 15px;
+}

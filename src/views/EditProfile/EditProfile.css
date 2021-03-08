@@ -1,0 +1,38 @@
+.edit-form {
+  margin-top: 25rem;
+  width: 100%;
+  margin-bottom: 5rem;
+  padding: 1rem;
+}
+
+.edit-form.form {
+  max-width: 80rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.5rem var(--color-grey);
+  padding: 2rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-control input {
+  width: 100%;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--color-grey);
+  padding: 0 1rem;
+  outline: none;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 20px;
+  height: 3rem;
+}
+
+.btn-edit {
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}

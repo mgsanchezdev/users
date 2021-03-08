@@ -1,0 +1,16 @@
+.profilContainer {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-perfil {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.text-detalls-perfil {
+  margin-top: 30px;
+}
