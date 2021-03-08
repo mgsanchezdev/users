@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { loginSchema } from '../../../validations/auth';
 import { useAuth } from '../../../context/auth';
-import { errorAlert, messageAlert } from '../../../utils/alerts';
+import { errorAlert } from '../../../utils/alerts';
 
 export const Login = () => {
   const history = useHistory();
@@ -27,9 +27,12 @@ export const Login = () => {
       }
     } else {
       reset();
-      messageAlert('success', 'Acabas de iniciar sesión').then(() => {
+      if (identifier === 'admin@admin.com') {
+        // Aca esto se debe de colocar en correo en el archivo .EMV
+        history.push('/homeadmin');
+      } else {
         history.push('/home');
-      });
+      }
     }
   };
 
