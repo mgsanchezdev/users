@@ -10,6 +10,9 @@ import EditProfile from '../views/EditProfile/EditProfile';
 import HomeAdmin from '../views/HomeAdmin/HomeAdmin';
 import Users from '../views/Users/Users';
 import Estadisticas from '../views/Estadisticas/Estadisticas';
+import UpdateUser from '../views/UpdateUser/UpdateUser';
+import AdminMenu from '../components/Layout/Header/AdminMenu/AdminMenu';
+import CreateUser from '../views/CreateUser/CreateUser';
 
 const Router = () => (
   <BrowserRouter>
@@ -33,9 +36,24 @@ const Router = () => (
           <PrivateRoute exact path="/home" component={Home} />
           <PrivateRoute exact path="/profile" component={Profile} />
           <PrivateRoute exact path="/editprofile" component={EditProfile} />
-          <PrivateRoute exact path="/homeadmin" component={HomeAdmin} />
-          <PrivateRoute exact path="/users" component={Users} />
-          <PrivateRoute exact path="/estadisticas" component={Estadisticas} />
+          <Route>
+            <AdminMenu />
+            <Switch>
+              <PrivateRoute exact path="/homeadmin" component={HomeAdmin} />
+              <PrivateRoute exact path="/users" component={Users} />
+              <PrivateRoute
+                exact
+                path="/estadisticas"
+                component={Estadisticas}
+              />
+              <PrivateRoute
+                exact
+                path="/updateuser/:id"
+                component={UpdateUser}
+              />
+              <PrivateRoute exact path="/createuser" component={CreateUser} />
+            </Switch>
+          </Route>
           <Route exact path="*" component={Error} />
         </Switch>
       </Route>

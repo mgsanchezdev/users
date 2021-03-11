@@ -1,0 +1,11 @@
+.container-create-user {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+
+.form-create-user {
+  margin-top: 5rem;
+  width: 50%;
+}
