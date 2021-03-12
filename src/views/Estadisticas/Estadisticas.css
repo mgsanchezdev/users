@@ -1,0 +1,11 @@
+.container-graphic {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.title-graphic {
+  margin-top: 40px;
+}
