@@ -2,7 +2,7 @@
 
 ## El deploy de la aplicación esta en:
 
-### https://..........
+### https://users-pi.vercel.app/auth
 
 Nota: El backend está realizado con Strapi y desplegado en Heroku, con lo cual como el plan gratis de Heroku se apaga el servidor a los 15 minutos de inactividad, la primera vez que se quiere loguear al sistema tarda un poco, que es hasta que se active de nuevo el servidor.
 
@@ -68,7 +68,7 @@ Nota: El backend está realizado con Strapi y desplegado en Heroku, con lo cual 
 
 ### npm install react-bootstrap bootstrap
 
-Para los iconos se utilizó:
+### Para los iconos se utilizó:
 
 ### npm install react-icons - -save
 
