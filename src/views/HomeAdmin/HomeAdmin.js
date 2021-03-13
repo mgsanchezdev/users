@@ -1,8 +1,13 @@
 import React from 'react';
+import Logo from '../../image/logo.jpg';
 
 const HomeAdmin = () => (
   <>
-    <h1>Home admin</h1>
+    <img
+      src={Logo}
+      alt="logo pagina adming"
+      style={{ width: '100%', height: '94vh' }}
+    />
   </>
 );
 

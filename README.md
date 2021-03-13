@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# App de manejos de usuarios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## El deploy de la aplicación esta en:
 
-## Available Scripts
+### https://..........
 
-In the project directory, you can run:
+Nota: El backend está realizado con Strapi y desplegado en Heroku, con lo cual como el plan gratis de Heroku se apaga el servidor a los 15 minutos de inactividad, la primera vez que se quiere loguear al sistema tarda un poco, que es hasta que se active de nuevo el servidor.
 
-### `npm start`
+## El usuario que puede ver el resto de los usuarios por defecto es:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Users: admin@admin.com
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Password: adminadmin
 
-### `npm test`
+## Un usuario común que solo puede acceder al sistema y actualizar solamente sus datos del perfil.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### User: alejandro@alejandro.com
 
-### `npm run build`
+### Password: 123456
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Detalles del proyecto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Se implementó el login de usuario y el registro. Cuando el usuario se registra al sistema se le envía un correo a la cuenta registrada para confirmar su registro a la web(este email por lo general va a la carpeta spam del correo), luego de hacer clic en el link que se envió al correo lo direcciona al home de la página.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### También se implementó la recuperación de contraseña, se envía un link al correo con el que se registró el usuario (este email por lo general va a la carpeta spam del correo) y luego lo envía a un página donde se pude agregar la nueva contraseña y luego se re direcciona a home.
 
-### `npm run eject`
+### También se implementó que el usuario que se registró al sistema pueda modificar los datos de perfil, ya sea que se allá ingresado a sistema con el usuario admin o cualquier otro usuario.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Con este usuario admin puede ver el resto de los usuarios del sistema (estos se pueden ordenar por un criterio determinado), pude modificar los datos de un usuario, puede borrar un usuario, también puede crear un usuario, puede ver cuántas veces se conectó un usuario en los últimos 7 días usuario (estos datos son fakeados/mockeados), puede ver en un mapa las coordenadas donde se conectó el usuario (estos datos son fakeados/mockeados).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Que librerías se utilizó:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Esta aplicación se creó con:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### npx create-react-app users
 
-## Learn More
+### Se configuro para el proyecto Eslint (Airbnb: https://github.com/airbnb/javascript), Prittier y Husky.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Para el manejo de rutas se utilizó React Router Dom:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### npm install react-router-dom
 
-### Code Splitting
+### Usamos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### npm install jsonwebtoken
 
-### Analyzing the Bundle Size
+### Para las peticiones a la API se utilizó Axios:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### npm install axios
 
-### Making a Progressive Web App
+### Para la validación de formularios se utilizó:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### npm install react-hook-form
 
-### Advanced Configuration
+### npm install @hookform/resolvers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### npm install -S yup
 
-### Deployment
+### Para las ventanas emergentes se utilizó:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### npm install --save sweetalert2
 
-### `npm run build` fails to minify
+### Para colocar cuando algo se está cargado algo o se está haciendo una petición a la API usamos el spinner:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### npm install --save react-spinners
+
+### Como librería de UI se utilizó:
+
+### npm install react-bootstrap bootstrap
+
+Para los iconos se utilizó:
+
+### npm install react-icons - -save
+
+### Para las tablas dinámicas y que se pueden ordenar haciendo clic en el encabezado de la tabla y se orden toda la tabla ya se descendente o ascendente se utilizó:
+
+### npm install react-table - -save
+
+### Para ver la geolocalización de los usuarios uso Google Maps:
+
+### npm i --save simple-react-google-maps
+
+### Para representar los datos de uso de CPU memoria y consumo de internet en un gráfico de líneas se utilizó la librería:
+
+### npm i react-charts –save
+
+### Para representar cuantas veces por día se conectó el usuario en un gráfico de barras se utilizó la librería:
+
+### npm install --save react-chartjs-2 chart.js
+
+### Se utilizó para el manejo de fecha las librería momento.js
+
+### npm install moment
+
+### Para descargar el proyecto:
+
+### git clone git@github.com:mgsanchezdev/users
+
+### cd users
+
+### npm install
+
+### Se abre en el navegador:
+
+### http://localhost:3000
+
+### Cualquier consulta al correo: mgsanchezdev@gmail.com
